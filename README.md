@@ -1,27 +1,26 @@
-# Blazor Pages
+# Blazor Github Pages
 
-[![Azure Status](https://dev.azure.com/fernandreu-public/BlazorPages/_apis/build/status/fernandreu.blazor-pages?branchName=master)](https://dev.azure.com/fernandreu-public/BlazorPages/_build/latest?definitionId=6?branchName=master)
-[![Actions Status](https://github.com/fernandreu/blazor-pages/workflows/gh-pages/badge.svg)](https://github.com/fernandreu/blazor-pages/actions)
+[![Actions Status](https://github.com/blazorgithubpages/blazorgithubpages.github.io/workflows/gh-pages/badge.svg)](https://github.com/blazorgithubpages/blazorgithubpages.github.io/actions)
 
 
-This project is an example of using Azure Pipelines / GitHub Actions to automatically deploy a client-side
+This project is an example of using GitHub Actions to automatically deploy a .NET 5 client-side
 Blazor app to Github Pages. For a live demo, check the following link:
 
-https://fernando.andreu.info/blazor-pages/
+https://blazorgithubpages.github.io
 
-Microsoft Docs already contains a [general overview](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/blazor/client-side?view=aspnetcore-3.1#github-pages)
-of the steps needed for a successful deploy, including an example of the final result 
-([repository](https://github.com/blazor-demo/blazor-demo.github.io) / [live site](https://blazor-demo.github.io/)).
+Microsoft Docs already contains a [general overview](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/blazor/client-side?view=aspnetcore-5.0#github-pages)
+of the steps needed for a successful deploy.
 
 
-This project goes one step ahead by:
+This project differs from [the project from which it's forked](https://github.com/fernandreu/blazor-pages) in that:
+- It is .NET 5, not .NET Core 3.1
+- Fewer steps from fork to running site (see below)
 
-- providing the full solution from where the pages are built;
-- showing the use of an auxiliary [Shared](src/Shared) project which could be re-used in
-  the ASP.NET Core server (similarly to how the combined client- and server-side Blazor
-  template does); and
-- automating the entire build and deployment to GitHub Pages.
-
+## How to deploy
+1. Fork this repository
+2. Rename your repository to [ `your user name` | `your organization name` ].github.io
+3. Go to your repository Settings > GitHub Pages > set the source branch to `gh-pages-from-actions`
+3. View your site at https://[ `your user name` | `your organization name` ].github.io
 
 ## How it works
 
@@ -32,9 +31,7 @@ the CI environment:
 - Azure Pipelines: the bundle is force pushed to `gh-pages` by using raw Git
 commands
 - GitHub Actions: an already existing [action](https://github.com/marketplace/actions/deploy-to-github-pages)
-is used to push the bundle to `gh-pages-from-actions` (this will need to be renamed to
-`gh-pages` to host your website from this branch)
-
+is used to push the bundle to `gh-pages-from-actions`
 
 ## How to use this for your own project
 
