@@ -1,6 +1,6 @@
 # Blazor Github Pages
 
-[![Actions Status](https://github.com/blazorgithubpages/blazorgithubpages.github.io/workflows/gh-pages/badge.svg)](https://github.com/blazorgithubpages/blazorgithubpages.github.io/actions)
+[![](../../workflows/gh-pages/badge.svg)](../../actions)
 
 
 This project is an example of using GitHub Actions to automatically deploy a .NET 5 client-side
