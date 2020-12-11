@@ -17,9 +17,8 @@ This project differs from [the project from which it's forked](https://github.co
 - Fewer steps from fork to running site (see below)
 
 ## How to deploy
-1. Fork this repository
-2. Rename your repository to [ `your user name` | `your organization name` ].github.io
-3. Go to your repository Settings > GitHub Pages > set the source branch to `gh-pages-from-actions`
+1. Create a repository based on this template via the "Use this template" button (you don't fork, a fork is for contributing to this template or creating your own template)
+2. Go to your repository Settings > GitHub Pages > set the source branch to `gh-pages-from-actions`
 3. View your site at https://[ `your user name` | `your organization name` ].github.io
 
 ## How it works
