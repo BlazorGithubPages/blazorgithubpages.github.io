@@ -1,10 +1,10 @@
-# Blazor Github Pages
+# Blazor GitHub Pages
 
 [![](../../workflows/gh-pages/badge.svg)](../../actions)
 
 
 This project is an example of using GitHub Actions to automatically deploy a .NET 8 client-side
-Blazor app to Github Pages. For a live demo, check the following link:
+Blazor app to GitHub Pages. For a live demo, check the following link:
 
 https://blazorgithubpages.github.io
 
